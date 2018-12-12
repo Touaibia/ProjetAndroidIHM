@@ -37,7 +37,7 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
   private void saveData(){
         String name = edittext.getText().toString();
         if(!name.isEmpty()){
-            DataManager.getInstance().setName(name);
+            DataManager.getInstance().addName(name);
         }
 
         finish();

@@ -1,11 +1,12 @@
 package com.example.touaibia.myapplication;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class DataManager {
 
     private static DataManager INSTANCE;
-    private String name;
+
     private List<String> nameList;
 
     public List<String> getNameList(){
@@ -16,16 +17,9 @@ public class DataManager {
         nameList.add(name);
 
     }
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
     private DataManager(){
-
+        nameList = new ArrayList<>();
 
     }
      public static DataManager getInstance(){
